@@ -1,5 +1,7 @@
 # Sentiment Analysis & Simple RAG Q&A — IMDB Movie Reviews
 
+🚀 **Live demo:** [Try the app](https://gkha5ybqsvsmnyagzjeakj.streamlit.app/)
+
 Two things in one repo, both built on the same data:
 
 - **Part A — Sentiment analysis:** is a movie review positive or negative?
