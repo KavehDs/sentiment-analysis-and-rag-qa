@@ -1,0 +1,5 @@
+# Full IMDB CSV (~66 MB) — downloaded at runtime by src/train.py,
+# never committed. The bundled data/imdb_sample.csv (2,000 rows) is the
+# version that ships in the repo.
+data/imdb_full.csv
+__pycache__/

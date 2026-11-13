@@ -1,0 +1,99 @@
+{
+  "dataset": {
+    "name": "Large Movie Review Dataset (IMDB, Maas et al. 2011)",
+    "source_urls": [
+      "https://raw.githubusercontent.com/rasbt/pattern_classification/master/data/50k_imdb_movie_reviews.csv",
+      "https://raw.githubusercontent.com/Ankit152/IMDB-sentiment-analysis/master/IMDB-Dataset.csv"
+    ],
+    "full_rows": 50000,
+    "full_label_balance": {
+      "positive": 25000,
+      "negative": 25000
+    },
+    "rows_used": 20000,
+    "used_label_balance": {
+      "positive": 10000,
+      "negative": 10000
+    },
+    "split": "stratified 80/20, random_state=42",
+    "test_rows": 4000,
+    "source_note": "full 50,000-review file"
+  },
+  "Majority class baseline": {
+    "accuracy": 0.5,
+    "precision_positive": 0.0,
+    "recall_positive": 0.0,
+    "f1_positive": 0.0,
+    "roc_auc_positive": null,
+    "confusion_matrix": [
+      [
+        2000,
+        0
+      ],
+      [
+        2000,
+        0
+      ]
+    ]
+  },
+  "TF-IDF + MultinomialNB": {
+    "accuracy": 0.866,
+    "precision_positive": 0.8564,
+    "recall_positive": 0.8795,
+    "f1_positive": 0.8678,
+    "roc_auc_positive": 0.9467,
+    "confusion_matrix": [
+      [
+        1705,
+        295
+      ],
+      [
+        241,
+        1759
+      ]
+    ]
+  },
+  "TF-IDF + Logistic Regression": {
+    "accuracy": 0.892,
+    "precision_positive": 0.8854,
+    "recall_positive": 0.9005,
+    "f1_positive": 0.8929,
+    "roc_auc_positive": 0.962,
+    "confusion_matrix": [
+      [
+        1767,
+        233
+      ],
+      [
+        199,
+        1801
+      ]
+    ]
+  },
+  "top_words": {
+    "positive": [
+      "great",
+      "excellent",
+      "wonderful",
+      "best",
+      "amazing",
+      "perfect",
+      "love",
+      "loved",
+      "fun",
+      "the best"
+    ],
+    "negative": [
+      "bad",
+      "worst",
+      "awful",
+      "the worst",
+      "boring",
+      "waste",
+      "poor",
+      "terrible",
+      "nothing",
+      "stupid"
+    ]
+  }
+}
